@@ -33,6 +33,11 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
+document.addEventListener("touchstart", function (event) {
+    // вызываем функцию jump() при касании экрана
+    jump();
+});
+
 // Получаем элемент кактуса по его ID
 const cactus = document.getElementById("cactus");
 
